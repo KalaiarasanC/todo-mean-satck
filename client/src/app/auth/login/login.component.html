@@ -1,0 +1,30 @@
+<div class="container-fluid login">
+    <div class="wraper-tgle">
+        <!-- <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label> -->
+        <button (click)="signup()">
+    Signup
+  </button>
+    </div>
+
+    <div [ngClass]="isLoginCard ? 'wrap takeInScale' : 'wrap takeOutScale'">
+        <div class="disp-table">
+            <div class="disp-cell lgn">
+                <div class="card ">
+                    <div class="card-header text-center">
+                        Login
+                    </div>
+                    <div class="card-body">
+                        <input type="text" name="email" id="email" [(ngModel)]='email' placeholder="Email">
+                        <input type="password" name="password" id="password" [(ngModel)]='password' placeholder="Password">
+                        <button type="submit" (click)='login()'>
+                      Go
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

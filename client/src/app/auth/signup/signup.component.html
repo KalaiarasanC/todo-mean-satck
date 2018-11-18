@@ -1,0 +1,35 @@
+<div class="container-fluid login">
+    <div class="wraper-tgle">
+        <!-- <label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label> -->
+        <button (click)="logIn()">
+  Login
+</button>
+    </div>
+
+    <div class='takeInScale'>
+        <div class="disp-table">
+            <div class="disp-cell lgn">
+                <div class="card ">
+                    <div class="card-header text-center">
+                        Signup
+                    </div>
+                    <div class="card-body">
+                        <form #registerForm="ngForm" (ngSubmit)="signUp(registerForm)">
+                            <input [(ngModel)]="model.email" #email='ngModel' required type="email" name="email" id="email" placeholder="Email" [class.has-error]="password.invalid && password.touched">
+                            <input [(ngModel)]="model.password" #password='ngModel' required type="password" name="password" id="password" placeholder="Password">
+                            <input [(ngModel)]="model.confirmPassword" #confirmPassword="ngModel" required type="password" name="reenter" id="password-renter" placeholder="Confirm Passsword">
+                            <input [(ngModel)]="model.name" type="text" #name='ngModel' required name="name" id="name" placeholder="How People Call You ?" [disabled]="password.value !=confirmPassword.value">
+                            <button type="submit" [disabled]="registerForm.invalid">
+                                Create
+                             </button>
+                            <!-- <span *ngIf='registerForm.invalid && registerForm.touched '> must fill allthe fields</span> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="todo">
+    <div class="disp-table">
+        <div class="disp-cell">
+            <div class="list-container" [@removeAnimate]='todoList.length'>
+                <div *ngFor="let item of todoList; let i = index;" class="list-item row">
+                    <div class="col-1">
+                        <div class="item">
+                            <input id="{{'checkBox-'+ i}}" type='checkbox' [checked]="item.isDone" (change)="updateItem(i)" />
+                            <label for="{{'checkBox-'+ i}}">
+                                <span class='check-box'></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class=" col-10 px-1">
+                        <div class="item">
+                            <label for="{{'checkBox-'+ i}}" class="pt-03">
+                                {{ item.todoItem }}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="px-1 col-1">
+                        <div (click)="removeTodo(i)" class="item pt-03">
+                            <div class="close"> + </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="addNew" class="list-item row">
+                    <div class="col-12">
+                        <div class="item">
+                            <input class='add-itm-input' (keypress)='addItem($event)' type="text" placeholder="Enter here..">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-wrap">
+
+        <button [ngClass]=" addNew ? 'circle-button-close' : 'circle-button'" (click)='toggleAdd()'>
+      <span>+</span>
+    </button>
+    </div>
+</div>

@@ -1,0 +1,109 @@
+@import '../auth.scss';
+// .wraper-tgle {
+//     position: absolute;
+//     right: 10px;
+//     top: 5px;
+// }
+// .login {
+//     background: linear-gradient(105deg, #03229A, #9D44E6);
+//     height: 100vh;
+//     .lgn {
+//         .card {
+//             background: transparent;
+//             width: 300px;
+//             box-shadow: 0px 0px 14px 1px #3a3a5b;
+//             border-left: 12px solid white;
+//             .card-header {
+//                 font-size: 2.5rem;
+//                 font-family: 'Sacramento', cursive;
+//                 // font-family: 'Tangerine', cursive;
+//                 color: white;
+//                 font-weight: 600;
+//             }
+//             .card-body {
+//                 min-height: 70px;
+//                 input {
+//                     width: 100%;
+//                     overflow: visible;
+//                     margin: 10px 4px;
+//                     padding: 5px;
+//                     // border: none;
+//                     outline: none;
+//                     border-radius: 3px;
+//                     background: transparent;
+//                     border: 1px solid #b9b5b5;
+//                     /* background-color: #f8f9fa; */
+//                     color: white;
+//                 }
+//             }
+//         }
+//     }
+// }
+// button {
+//     background: transparent;
+//     outline: none;
+//     border: none;
+//     // padding: 5px 20px;
+//     padding-top: 6px;
+//     padding-bottom: 3px;
+//     padding-right: 20px;
+//     padding-left: 20px;
+//     border-radius: 6px;
+//     // border: 1px solid #50dbeeed;
+//     border: 1px solid #b9b5b5;
+//     float: right;
+//     margin: 9px 0px;
+//     color: white;
+//     cursor: pointer;
+// }
+// input::placeholder {
+//     color: #b9b5b5;
+// }
+// .takeOutScale {
+//     display: block;
+//     animation: hide 0.4s forwards ease-out;
+//     // display: none;
+// }
+// .takeInScale {
+//     animation: show 0.4s forwards ease-out;
+// }
+// .takeInScale.takeOutScale {
+//     display: none;
+// }
+// @keyframes hide {
+//     // 0% {
+//     //     transform: scale(1);
+//     //     opacity: 0.9;
+//     // }
+//     // 60% {
+//     //     transform: scale(2);
+//     //     opacity: 0.5;
+//     // }
+//     // 90% {
+//     //     transform: scale(3);
+//     //     opacity: 0.2;
+//     // }
+//     // 100% {
+//     //     opacity: 0;
+//     //     display: none;
+//     // }
+//     from {
+//         transform: scale(1);
+//         opacity: 0.5
+//     }
+//     to {
+//         transform: scale(3);
+//         opacity: 0;
+//         display: none !important;
+//     }
+// }
+// @keyframes show {
+//     from {
+//         transform: scale(0.1);
+//         opacity: 0.2;
+//     }
+//     to {
+//         transform: scale(1);
+//         opacity: 1;
+//     }
+// }

@@ -1,0 +1,19 @@
+{
+  "name": "todo-mean-stack",
+  "version": "1.0.0",
+  "description": "'simpele todo application for mean satck'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KalaiarasanC/todo-meanStack.git"
+  },
+  "author": "kalai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KalaiarasanC/todo-meanStack/issues"
+  },
+  "homepage": "https://github.com/KalaiarasanC/todo-meanStack#readme"
+}
